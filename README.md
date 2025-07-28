@@ -43,7 +43,8 @@ To showcase my frontend skills by building a simple but functional and responsiv
 ---
 
 ## 🔗 Connect With Me
-Feel free to check out my [LinkedIn Profile](www.linkedin.com/in/riddhi-paruparla-a3a9b834a) and share your feedback!
+Feel free to check out my [LinkedIn Profile][LinkedIn Profile](https://www.linkedin.com/in/riddhi-paruparla-a3a9b834a)
+and share your feedback!
 
 ---
 
