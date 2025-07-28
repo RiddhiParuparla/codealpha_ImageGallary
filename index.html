@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('bird')">Bird</button>
+    <button onclick="filterImages('animal')">Animal</button>
+    <button onclick="filterImages('flower')">Flower</button>
+    
+  </div>
+
+  <!-- Image Gallery Grid -->
+  <div class="gallery">
+    <img src="https://www.teraganix.com/cdn/shop/articles/flower-garden.jpg?v=1688602408" alt="Flower" class="gallery-item flower" onclick="openLightbox(this)">
+    <img src="https://images.unsplash.com/photo-1621084095057-afa70a6daea4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FyZGVuJTIwYmlyZHN8ZW58MHx8MHx8fDA%3D" alt="Bird" class="gallery-item bird" onclick="openLightbox(this)">
+    <img src="https://images.unsplash.com/photo-1520808663317-647b476a81b9?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJpcmR8ZW58MHx8MHx8fDA%3D" alt="Bird" class="gallery-item bird" onclick="openLightbox(this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQigMFbUfbxFFTN89eOfJNY404iNCq80Hcbaw&s" alt="Flower" class="gallery-item flower" onclick="openLightbox(this)">
+    <img src="https://images.pexels.com/photos/1851764/pexels-photo-1851764.jpeg?cs=srgb&dl=beautiful-flower-beautiful-flowers-flower-1851764.jpg&fm=jpg" alt="Flower" class="gallery-item flower" onclick="openLightbox(this)">
+    <img src="https://images.unsplash.com/photo-1613891188927-14c2774fb8d7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyZCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Bird" class="gallery-item bird" onclick="openLightbox(this)">
+    <img src="https://mythologystories.wordpress.com/wp-content/uploads/2014/02/black-bird.jpg" alt="Bird" class="gallery-item bird" onclick="openLightbox(this)">
+    <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFuaW1hbHN8ZW58MHx8MHx8fDA%3D" alt="Animal" class="gallery-item animal" onclick="openLightbox(this)">
+    <img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.webp?b=1&s=612x612&w=0&k=20&c=o3n-h2j4aBnaDqKeY-876cTRm1DLOsZcCjcfDZf_9TQ=" alt="Flower" class="gallery-item flower" onclick="openLightbox(this)">
+    <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D" alt="Animal" class="gallery-item animal" onclick="openLightbox(this)">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHR9HkRgOGXXRuznN4tTqUDJUqyjeZaiXsQ&s" alt="Flower" class="gallery-item flower" onclick="openLightbox(this)">
+    <img src="https://plus.unsplash.com/premium_photo-1669279284458-0501524c71ec?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zmx5aW5nJTIwYmlyZHxlbnwwfHwwfHx8MA%3D%3D" alt="Bird" class="gallery-item bird" onclick="openLightbox(this)">
+    <img src="https://images.pexels.com/photos/1115090/pexels-photo-1115090.jpeg?cs=srgb&dl=pexels-shottrotter-1115090.jpg&fm=jpg" alt="Flower" class="gallery-item flower" onclick="openLightbox(this)">
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="nav">
+      <button onclick="navigate(-1)">❮</button>
+      <button onclick="navigate(1)">❯</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
